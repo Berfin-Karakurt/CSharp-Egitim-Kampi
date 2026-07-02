@@ -26,19 +26,33 @@ namespace _03_MakingDecision
             //}
 
             #endregion
-            //Console.WriteLine("Şifre Giriniz: ");
-            //string password;
-            //password = Console.ReadLine();
-            //if (password == "abcd")
+            string capital, country;
+            Console.WriteLine("Başkent Adını Giriniz: ");
+            capital = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Ülke Adını Giriniz: ");
+            country = Console.ReadLine();
+            Console.WriteLine();
+
+            //if (capital == "Ankara" && country == "Türkiye")
             //{
-            //    Console.WriteLine("Şifre Doğru");
+            //    Console.WriteLine("Doğru");
             //}
             //else
             //{
-            //     Console.WriteLine("Şifre Yanlış");
+            //    Console.WriteLine("Yanlış");
             //}
 
+            if (string.Equals(capital, "Ankara", StringComparison.OrdinalIgnoreCase) &&
+                string.Equals(country, "Türkiye", StringComparison.OrdinalIgnoreCase)) //büyük harf küçük harf duyarsız kod
+            {
+                Console.WriteLine("Doğru");
+            }
+            else
+            {
+                Console.WriteLine("Yanlış");
 
-        }
+
+            }
     }
 }
