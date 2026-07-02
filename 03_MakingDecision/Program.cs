@@ -26,7 +26,17 @@ namespace _03_MakingDecision
             //}
 
             #endregion
-
+            //Console.WriteLine("Şifre Giriniz: ");
+            //string password;
+            //password = Console.ReadLine();
+            //if (password == "abcd")
+            //{
+            //    Console.WriteLine("Şifre Doğru");
+            //}
+            //else
+            //{
+            //     Console.WriteLine("Şifre Yanlış");
+            //}
 
 
         }
